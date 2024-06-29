@@ -1,6 +1,7 @@
 # NetatmoAPIClient
 
-このPythonクライアントは、[Netatmo Weather API](https://dev.netatmo.com/apidocumentation/weather#getstationsdata)にアクセスするためのものです。アクセストークンの取得と更新、およびNetatmoデバイスからの気象データの取得が可能です。
+このPythonクライアントは、[Netatmo Weather API](https://dev.netatmo.com/apidocumentation/weather#getstationsdata)にアクセスするためのものです。  
+アクセストークンの取得と更新、およびNetatmoデバイスからの気象データの取得が可能です。
 
 ## 使用方法
 1. [netatmo_api_client.py](https://github.com/shinking02/NetatmoAPIClient/blob/main/netatmo_api_client.py)を自身のプロジェクトのルートディレクトリ（.envなどがあるフォルダ）にダウンロードしてください。
@@ -29,7 +30,7 @@ print("Stations Data:", stations_data)
 
 
 ## オプション
-NetatmoAPIClientではリフレッシュトークンを用いて取得したアクセストークンを`netatmo_api_client.py`と同一階層の`token_info.json`に保存します。
+NetatmoAPIClientではリフレッシュトークンを用いて取得したアクセストークンを`netatmo_api_client.py`と同一階層の`token_info.json`に保存します。  
 `token_info.json`を他のディレクトリに保存したい場合や、別のファイル名を使用したい場合はクライアントの初期化時に保存先を指定することができます。
 ```python
 from netatmo_api_client import NetatmoAPIClient
